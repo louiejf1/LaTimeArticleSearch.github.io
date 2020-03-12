@@ -34,8 +34,8 @@ $(document).ready(function () {
 
                 let article = results[i];
 
-                let p = $("<p>").text("Doc#: " + article);
-
+                let p = $("<p>").text("Doc#: " + article.headline.main);
+		
 
                 $('#bottomSection').prepend(p);
                 
