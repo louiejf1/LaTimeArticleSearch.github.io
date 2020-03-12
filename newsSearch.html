@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="style.css">
+</head>
+
+<body>
+    <!-- <body> -->
+
+    <div class="container-fluid">
+        <!-- <Jumbotron Cont> -->
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">New York Times Top News</h1>
+                <p class="lead"></p>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- <MainContainer Cont> -->
+
+            <div class="row">
+                <!-- <Top Row> -->
+
+                <div id="topSection" class="col-sm">
+                    <!-- <topSection> -->
+                    <H2>Search Parameters</H2>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">Search Term</span>
+                    </div><!-- <serach term> -->
+                    <input id='searchTerm' type="text" class="form-control" placeholder=""
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2"># of Articles to Retrieve</span>
+                    </div><!-- <noToRetreive> -->
+                    <input id='noToRetreive' type="text" class="form-control" placeholder=""
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">Start Year</span>
+                    </div><!-- <startYear> -->
+                    <input id='startYear' type="text" class="form-control" placeholder=""
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">End Year</span>
+                    </div><!-- <endYear> -->
+                    <input id='endYear' type="text" class="form-control" placeholder=""
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+                <button id='searchBtn' type="button" class="btn btn-primary">Search</button><br>
+                <button id='clearBtn' type="button" class="btn btn-primary">Clear</button>
+
+            </div>
+
+            <div class="row">
+                <div id='bottomSection' class="col-sm">
+                    <!-- <bottomSection> -->
+                    <h2>Top Articles</h2>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
